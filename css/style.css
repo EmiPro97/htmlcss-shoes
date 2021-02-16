@@ -6,6 +6,55 @@
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-html[
+html{
     scroll-behavior: smooth;
-]
+}
+
+
+/* Sections */
+.sect{
+    height: 100vh;
+    position: relative;
+}
+
+.sect.red{
+    background-color: red;
+}
+
+.sect.green{
+    background-color: green; 
+}
+
+.sect.yellow{
+    background-color: yellow;
+}
+
+
+/* Wrapper */
+.sect .model-wrapper{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 650px;
+    text-align: center;
+}
+
+
+/* Images */
+.sect .model-wrapper img{
+    width: 100%;
+}
+
+
+/* Text */
+.sect .model-wrapper h2{
+    font-size: 40px;
+}
+.sect.red h2,
+.sect.green h2{
+    color: yellow;
+}
+.sect.yellow h2{
+    color: green;
+}
